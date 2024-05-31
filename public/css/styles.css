@@ -13,7 +13,7 @@ h1 {
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: white;
+  background:white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
@@ -93,4 +93,60 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#A683E3;
+  padding: 1em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.navbar a:hover {
+  background-color:#c3a5f7;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-toggler {
+  display: none;
+  background-color:#F1F1F1;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
 }
